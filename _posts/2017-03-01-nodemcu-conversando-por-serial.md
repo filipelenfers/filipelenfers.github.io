@@ -13,9 +13,13 @@ esta avisar que recebeu o byte através do Serial Monitor do Arduino IDE.
 
 [Comunicação serial][com-serial] é o processo de mandar 1 bit de cada vez,
 sequencialmente, através de um barramento. A comunicação serial ocorre ligando
-os pinos TX/RX da placa a outra placa ou dispositivo.
+os pinos RX/TX da placa a outra placa ou dispositivo.
 
-O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o [UART0][uart] (serial via hardware) que está mapeado para os pinos  GPIO1 (TX) e GPIO3 (RX), ele pode ser remapeado para os pinos GPIO15(TX, pino D8) e GPIO13 (RX, pino D7) chamando o comando `Serial.swap()`. Não se pode usar dois seriais via hardware ao mesmo tempo, temos que fazer o swap entre eles. Mais detalhes sobre o `Serial` no NodeMCU(ESP8266) no link [https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial][esp-serial] .
+> O nome RX vem de Receive, e o nome TX vem de Transmit. Ou seja o receptor e o transmissor.
+
+O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o [UART0][uart] (serial via hardware) que está mapeado para os pinos  GPIO1 (TX) e GPIO3 (RX), ele pode ser remapeado para os pinos GPIO15(TX, pino D8) e GPIO13 (RX, pino D7) chamando o comando `Serial.swap()`. Não se pode usar dois seriais via hardware ao mesmo tempo, temos que fazer o swap entre eles. Por isso resolvi usar a biblioteca SoftwareSerial para usar 2 pinos para comunicação serial enquando deixar o `Serial` disponível para enviar os logs para o serial monitor do Arduino IDE.
+
+Mais detalhes sobre o `Serial` no NodeMCU(ESP8266) no link [https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial][esp-serial] .
 
 Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.arduino.cc/en/Reference/softwareSerial) que permite usarmos outros pinos digitais para comunicação serial independente do `Serial` via hardware.
 
@@ -33,14 +37,20 @@ Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.ardui
 > TX da placa A liga no RX da placa B.
 > RX da placa A liga no TX da placa B.
 
-TODO Figura do esquema
-TODO Foto do esquema
+![Conexão dos fios]({{ site.url }}/assets/images/NodeMcuSerialIntro_bb.png)
+
+Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/projects/serial-conection-between-2-nodemcus][fritzing-link].
+
+TODO Foto do esquema real
 
 # [](#header-1) Código
+
+
 
 ## [](#header-1) Transmissor
 
 TODO Código do transmissor
+TODO falar que poderia ter usado print ao invés do write https://www.arduino.cc/en/Reference/SoftwareSerialPrint
 
 ## [](#header-1) Receptor
 TODO Código do receptor
@@ -53,6 +63,17 @@ TODO Fotos do Teste
 TODO Vídeo do teste
 
 
+# [](#header-1) Observações
+
+TODO O software serial só deixa ler uma comunicação serial por vez, deve-se usar o método listen para alternar entre eles. https://www.arduino.cc/en/Reference/SoftwareSerialListen
+
+
+# [](#header-1) Aprofundando
+
+TODO este foi um tutorial básico e prático, este link possui informações mais detalhadas para aprofuncamento: https://learn.sparkfun.com/tutorials/serial-communication
+
+
+
 Porte da SoftwareSerial para ESP8266
 https://github.com/plerup/espsoftwareserial
 
@@ -60,3 +81,4 @@ https://github.com/plerup/espsoftwareserial
 [com-serial]: https://en.wikipedia.org/wiki/Serial_communication
 [uart]: https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter
 [esp-serial]: https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial
+[fritzing-link]:http://fritzing.org/projects/serial-conection-between-2-nodemcus
