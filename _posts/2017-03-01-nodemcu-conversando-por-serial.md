@@ -49,15 +49,85 @@ Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/proje
 
 ## [](#codigo) Código
 
+Nos códigos abaixo um NodeMCU vai ser comportar somente como transmissor e
+outro somente como receptor, entretando a conexão que fizemos é um caminho de
+duas vias: ambos poderiam transmitir e receber dados um para o outro. Para
+mantermos o teste simples, somente um irá transmitir e o outro receber.
 
+Código dos dois projetos:
+
+* [Projeto transmissor][project_transmitter]
+* [Projeto receptor][project_receiver]
 
 ### [](#transmissor) Transmissor
 
-TODO Código do transmissor
-TODO falar que poderia ter usado print ao invés do write https://www.arduino.cc/en/Reference/SoftwareSerialPrint
+O código abaixo envia a cada um segundo um número (char) entre 65 e 90, que são as letras maiúsculas na [tabela ASCII](https://www.arduino.cc/en/Reference/ASCIIchart).
+
+```cpp
+#include <SoftwareSerial.h>
+
+#define D7 13
+#define D8 15
+
+SoftwareSerial mySerial(D7, D8); // RX = D7, TX  = D8
+
+
+void setup() {
+  Serial.begin(9600); //Start Serial
+  mySerial.begin(9600); //Start mySerial
+  pinMode(D7,INPUT); //d7 is RX, receiver, so define it as input
+  pinMode(D8,OUTPUT); //d8 is TX, transmitter, so define it as output
+} // end of setup
+
+
+void loop() {
+
+  char letter = random(65,91); //Numbers between 65 and 90, that are the upper case letters in ASCII table (https://www.arduino.cc/en/Reference/ASCIIchart).
+
+  mySerial.write(letter); // write the byte to the serial so other NodeMCU can receive it.
+
+  Serial.print("LETRA ");Serial.print(letter); Serial.println(" ENVIADA"); // Write on serial monitor which letter was sent.
+
+  delay(1000); // Wait for a sec.
+
+} // end of loop
+```
+
+Poderia ser usado o método print/println também, a documentação do método está aqui: [https://www.arduino.cc/en/Reference/SoftwareSerialPrint](https://www.arduino.cc/en/Reference/SoftwareSerialPrint).
 
 ### [](#reeptor) Receptor
-TODO Código do receptor
+
+O código do receptor tem um passo a mais que é checar se existem bytes a serem
+lidos. Para isso fazemos o teste `mySerial.available() > 0`, ou seja se existem
+mais de 0 bytes a sereml idos.
+
+```cpp
+#include <SoftwareSerial.h>
+
+#define D7 13
+#define D8 15
+
+SoftwareSerial mySerial(D7, D8); // RX = D7, TX  = D8
+
+
+void setup() {
+  Serial.begin(9600); //Start Serial
+  mySerial.begin(9600); //Start mySerial
+  pinMode(D7,INPUT); //d7 is RX, receiver, so define it as input
+  pinMode(D8,OUTPUT); //d8 is TX, transmitter, so define it as output
+} // end of setup
+
+void loop() {
+  char receivedLetter = '?'; // if empty show question mark
+
+  if (mySerial.available() > 0) { //Check if serial is avaliable, if this check is not done you will read 'ÿ'
+    receivedLetter = mySerial.read(); //read the char received. This function returns -1 if there is nothing to read.
+    Serial.print("LETRA ");Serial.print(receivedLetter); Serial.println(" RECEBIDA"); // Write on serial monitor which letter was received.
+  }
+
+} //end of loop
+```
+
 
 
 ## [](#teste) Teste
@@ -89,3 +159,5 @@ https://github.com/plerup/espsoftwareserial
 [photo_schema3compact_link]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
 [photo_nodeA]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
 [photo_nodeB]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
+[project_transmitter]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeAtransmitter.zip
+[project_receiver]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeBreceiver.zip
