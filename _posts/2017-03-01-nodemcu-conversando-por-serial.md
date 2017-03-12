@@ -9,7 +9,7 @@ Vamos conectar duas placas NodeMCU para trocar informações via comunicação
 serial, de uma forma bem simples, aonde uam vai enviar um bite para outra e
 esta avisar que recebeu o byte através do Serial Monitor do Arduino IDE.
 
-# [](#com-serial)Comunicação Serial?
+## [](#com-serial)Comunicação Serial?
 
 [Comunicação serial][com-serial] é o processo de mandar 1 bit de cada vez,
 sequencialmente, através de um barramento. A comunicação serial ocorre ligando
@@ -25,50 +25,54 @@ Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.ardui
 
 
 
-# [](#materiais)Materiais
+## [](#materiais)Materiais
 
 *   2 x NodeMCU
 *   Conectores
 *   Cabo USB para gravar o progama
 
-# [](#header-1)Ligando os fios
+## [](#fios)Ligando os fios
 
 > A ligação dos pinos TX/RX deve ser invertida entre as placas:
 > TX da placa A liga no RX da placa B.
 > RX da placa A liga no TX da placa B.
 
-![Conexão dos fios]({{ site.github.url }}/assets/images/NodeMcuSerialIntro_bb.png)
+![Conexão dos fios]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png)
 
 Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/projects/serial-conection-between-2-nodemcus][fritzing-link].
 
-TODO Foto do esquema real
+[![Foto conexão dos fios]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG)][photo_schema3compact_link]
 
-# [](#header-1) Código
+[![Foto Node A - Transmitter]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG)][photo_nodeA]
+
+[![Foto Node B - Receiver]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG)][photo_nodeB]
+
+## [](#codigo) Código
 
 
 
-## [](#header-1) Transmissor
+### [](#transmissor) Transmissor
 
 TODO Código do transmissor
 TODO falar que poderia ter usado print ao invés do write https://www.arduino.cc/en/Reference/SoftwareSerialPrint
 
-## [](#header-1) Receptor
+### [](#reeptor) Receptor
 TODO Código do receptor
 
 
-# [](#header-1) Teste
+## [](#teste) Teste
 
 TODO descrição do Teste
 TODO Fotos do Teste
 TODO Vídeo do teste
 
 
-# [](#header-1) Observações
+## [](#observacoes) Observações
 
 TODO O software serial só deixa ler uma comunicação serial por vez, deve-se usar o método listen para alternar entre eles. https://www.arduino.cc/en/Reference/SoftwareSerialListen
 
 
-# [](#header-1) Aprofundando
+## [](#aprofundando) Aprofundando
 
 TODO este foi um tutorial básico e prático, este link possui informações mais detalhadas para aprofuncamento: https://learn.sparkfun.com/tutorials/serial-communication
 
@@ -82,3 +86,6 @@ https://github.com/plerup/espsoftwareserial
 [uart]: https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter
 [esp-serial]: https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial
 [fritzing-link]:http://fritzing.org/projects/serial-conection-between-2-nodemcus
+[photo_schema3compact_link]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
+[photo_nodeA]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
+[photo_nodeB]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
