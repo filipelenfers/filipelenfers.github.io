@@ -37,15 +37,15 @@ Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.ardui
 > TX da placa A liga no RX da placa B.
 > RX da placa A liga no TX da placa B.
 
-![Conexão dos fios]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png)
+![Conexão dos fios]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png)
 
 Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/projects/serial-conection-between-2-nodemcus][fritzing-link].
 
-[![Foto conexão dos fios]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG)][photo_schema3compact_link]
+[![Foto conexão dos fios]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG)][photo_schema3compact_link]
 
-[![Foto Node A - Transmitter]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG)][photo_nodeA]
+[![Foto Node A - Transmitter]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG)][photo_nodeA]
 
-[![Foto Node B - Receiver]({{ site.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG)][photo_nodeB]
+[![Foto Node B - Receiver]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG)][photo_nodeB]
 
 ## [](#codigo) Código
 
@@ -86,6 +86,6 @@ https://github.com/plerup/espsoftwareserial
 [uart]: https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter
 [esp-serial]: https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial
 [fritzing-link]:http://fritzing.org/projects/serial-conection-between-2-nodemcus
-[photo_schema3compact_link]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
-[photo_nodeA]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
-[photo_nodeB]:{{site.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
+[photo_schema3compact_link]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
+[photo_nodeA]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
+[photo_nodeB]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
