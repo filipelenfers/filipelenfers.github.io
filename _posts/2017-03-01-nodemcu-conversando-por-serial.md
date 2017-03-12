@@ -37,7 +37,7 @@ Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.ardui
 > TX da placa A liga no RX da placa B.
 > RX da placa A liga no TX da placa B.
 
-![Conexão dos fios]({{ site.url }}/assets/images/NodeMcuSerialIntro_bb.png)
+![Conexão dos fios]({{ site.github.url }}/assets/images/NodeMcuSerialIntro_bb.png)
 
 Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/projects/serial-conection-between-2-nodemcus][fritzing-link].
 
