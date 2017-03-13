@@ -19,8 +19,6 @@ os pinos RX/TX da placa a outra placa ou dispositivo.
 
 O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o [UART0][uart] (serial via hardware) que está mapeado para os pinos  GPIO1 (TX) e GPIO3 (RX), ele pode ser remapeado para os pinos GPIO15(TX, pino D8) e GPIO13 (RX, pino D7) chamando o comando `Serial.swap()`. Não se pode usar dois seriais via hardware ao mesmo tempo, temos que fazer o swap entre eles. Por isso resolvi usar a biblioteca SoftwareSerial para usar 2 pinos para comunicação serial enquando deixar o `Serial` disponível para enviar os logs para o serial monitor do Arduino IDE.
 
-Mais detalhes sobre o `Serial` no NodeMCU(ESP8266) no link [https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial][esp-serial] .
-
 Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.arduino.cc/en/Reference/softwareSerial) que permite usarmos outros pinos digitais para comunicação serial independente do `Serial` via hardware.
 
 
@@ -133,31 +131,39 @@ void loop() {
 ## [](#teste) Teste
 
 TODO descrição do Teste
-TODO Fotos do Teste
 TODO Vídeo do teste
 
 
 ## [](#observacoes) Observações
 
-TODO O software serial só deixa ler uma comunicação serial por vez, deve-se usar o método listen para alternar entre eles. https://www.arduino.cc/en/Reference/SoftwareSerialListen
+>  O software serial só deixa ler uma comunicação serial por vez, deve-se usar o método listen para alternar entre eles. [Mais detalhes aqui.](https://www.arduino.cc/en/Reference/SoftwareSerialListen)
+
+> Como temos RX e TX conectados em ambas as placas, os dois NodeMCUs podem tanto receber quanto transmitir um do outro.
+
+> Este post foi baseado em NodeMCU, entretando é possível replicar a mesma ideia em placas Arduino.
+
+
 
 
 ## [](#aprofundando) Aprofundando
 
-TODO este foi um tutorial básico e prático, este link possui informações mais detalhadas para aprofuncamento: https://learn.sparkfun.com/tutorials/serial-communication
+Este foi um tutorial simles e prático, caso você deseje aprofundar os conhecimentos sobre comunicação serial alguns links abaixo para ajudar:
+
+* Tutorial sobre comunicação serial: [https://learn.sparkfun.com/tutorials/serial-communication][sparkfun-serial-tutorial].
+* Mais detalhes sobre o `Serial` no NodeMCU(ESP8266) neste [link][esp-serial] .
+* [EspSoftwareSerial][espsoftwareserial]
 
 
-
-Porte da SoftwareSerial para ESP8266
-https://github.com/plerup/espsoftwareserial
 
 
 [com-serial]: https://en.wikipedia.org/wiki/Serial_communication
 [uart]: https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter
 [esp-serial]: https://github.com/esp8266/Arduino/blob/master/doc/reference.md#serial
+[espsoftwareserial]:https://github.com/plerup/espsoftwareserial
 [fritzing-link]:http://fritzing.org/projects/serial-conection-between-2-nodemcus
 [photo_schema3compact_link]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
 [photo_nodeA]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
 [photo_nodeB]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
 [project_transmitter]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeAtransmitter.zip
 [project_receiver]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeBreceiver.zip
+[sparkfun-serial-tutorial]:https://learn.sparkfun.com/tutorials/serial-communication
