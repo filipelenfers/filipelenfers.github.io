@@ -7,7 +7,7 @@ categories: iot
 
 Vamos conectar duas placas NodeMCU para trocar informações via comunicação
 serial, de uma forma bem simples, aonde uam vai enviar um bite para outra e
-esta avisar que recebeu o byte através do Serial Monitor do Arduino IDE.
+esta avisar que recebeu o byte através do Serial Monitor do ___Arduino IDE___.
 
 ## [](#com-serial)Comunicação Serial?
 
@@ -22,7 +22,6 @@ O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o 
 Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.arduino.cc/en/Reference/softwareSerial) que permite usarmos outros pinos digitais para comunicação serial independente do `Serial` via hardware.
 
 
-
 ## [](#materiais)Materiais
 
 *   2 x NodeMCU
@@ -35,7 +34,7 @@ Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.ardui
 > TX da placa A liga no RX da placa B.
 > RX da placa A liga no TX da placa B.
 
-![Conexão dos fios]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png)
+[![Conexão dos fios]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png)][schema_image]
 
 Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/projects/serial-conection-between-2-nodemcus][fritzing-link].
 
@@ -93,7 +92,7 @@ void loop() {
 
 Poderia ser usado o método print/println também, a documentação do método está aqui: [https://www.arduino.cc/en/Reference/SoftwareSerialPrint](https://www.arduino.cc/en/Reference/SoftwareSerialPrint).
 
-### [](#reeptor) Receptor
+### [](#receptor) Receptor
 
 O código do receptor tem um passo a mais que é checar se existem bytes a serem
 lidos. Para isso fazemos o teste `mySerial.available() > 0`, ou seja se existem
@@ -143,8 +142,6 @@ TODO Vídeo do teste
 > Este post foi baseado em NodeMCU, entretando é possível replicar a mesma ideia em placas Arduino.
 
 
-
-
 ## [](#aprofundando) Aprofundando
 
 Este foi um tutorial simles e prático, caso você deseje aprofundar os conhecimentos sobre comunicação serial alguns links abaixo para ajudar:
@@ -164,6 +161,7 @@ Este foi um tutorial simles e prático, caso você deseje aprofundar os conhecim
 [photo_schema3compact_link]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_schema.JPG
 [photo_nodeA]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeA.JPG
 [photo_nodeB]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG
+[schema_image]:{{site.github.url}}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/NodeMcuSerialIntro_bb.png
 [project_transmitter]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeAtransmitter.zip
 [project_receiver]:{{site.github.url}}/assets/code/post/2017-03-01-nodemcu-conversando-por-serial/NodeBreceiver.zip
 [sparkfun-serial-tutorial]:https://learn.sparkfun.com/tutorials/serial-communication
