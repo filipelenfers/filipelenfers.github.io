@@ -24,6 +24,8 @@ github_username:  filipelenfers
 permalink: pretty
 paginate: 10
 google_analytics: UA-25984757-2
+disqus:
+    shortname: filipelenfers
 
 # Build settings
 markdown: kramdown
