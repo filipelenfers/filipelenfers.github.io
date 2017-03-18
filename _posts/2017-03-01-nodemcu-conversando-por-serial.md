@@ -2,8 +2,8 @@
 layout: post
 title:  "Conectando dois nodemcu por SoftwareSerial"
 date:   2017-03-01 19:50:00 +0000
-categories: iot nodemcu
 comments: true
+categories: iot nodemcu
 ---
 
 Vamos conectar duas placas NodeMCU para trocar informações via comunicação
