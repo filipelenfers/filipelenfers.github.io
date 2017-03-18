@@ -14,9 +14,6 @@ layout: default
   </div>
 
   {% if site.disqus.shortname %}
-    <h1>Opa! {{ site.disqus.shortname }}</h1><br /><br />
-    <h1>Ambiente! {{  jekyll.environment }}</h1><br /><br />
-    <h1>Comentarios! {{  page.comments }}</h1><br /><br />
     {% include disqus_comments.html %}
   {% endif %}
 </article>
