@@ -6,7 +6,7 @@ categories: iot
 ---
 
 Vamos conectar duas placas NodeMCU para trocar informações via comunicação
-serial, de uma forma bem simples, aonde uam vai enviar um bite para outra e
+serial, de uma forma bem simples, aonde uma vai enviar um byte para outra e
 esta avisar que recebeu o byte através do Serial Monitor do ___Arduino IDE___.
 
 ## [](#com-serial)Comunicação Serial?
@@ -17,15 +17,15 @@ os pinos RX/TX da placa a outra placa ou dispositivo.
 
 > O nome RX vem de Receive, e o nome TX vem de Transmit. Ou seja o receptor e o transmissor.
 
-O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o [UART0][uart] (serial via hardware) que está mapeado para os pinos  GPIO1 (TX) e GPIO3 (RX), ele pode ser remapeado para os pinos GPIO15(TX, pino D8) e GPIO13 (RX, pino D7) chamando o comando `Serial.swap()`. Não se pode usar dois seriais via hardware ao mesmo tempo, temos que fazer o swap entre eles. Por isso resolvi usar a biblioteca SoftwareSerial para usar 2 pinos para comunicação serial enquando deixar o `Serial` disponível para enviar os logs para o serial monitor do Arduino IDE.
+O objeto `Serial` que comumente usamos no Arduino IDE aponta por padrão para o [UART0][uart] (serial via hardware) que está mapeado para os pinos  GPIO1 (TX) e GPIO3 (RX), ele pode ser remapeado para os pinos GPIO15(TX, pino D8) e GPIO13 (RX, pino D7) chamando o comando `Serial.swap()`. O `Serial` não consegue operar trabalhando com o GPIO1/GPIO3 e o GPIO15/GPIO13 ao mesmo tempo, temos que fazer o swap entre eles. Por isso resolvi usar a biblioteca `SoftwareSerial` para usar os pinos GPIO15/GPIO13 para comunicação serial, e ainda assim deixar o `Serial` disponível para enviar os logs para o serial monitor do Arduino IDE para facilitar o debug.
 
-Entretanto temos a opção de usar a bilioteca SoftwareSerial (https://www.arduino.cc/en/Reference/softwareSerial) que permite usarmos outros pinos digitais para comunicação serial independente do `Serial` via hardware.
+A bilioteca SoftwareSerial (https://www.arduino.cc/en/Reference/softwareSerial) permite usarmos pinos digitais para comunicação serial independente do `Serial` via hardware. Esta biblioteca visa replicar o funcionamento do `Serial` via software.
 
 
 ## [](#materiais)Materiais
 
-*   2 x NodeMCU
-*   Conectores
+*   2 NodeMCUs (podem ser usados arduinos ao invés dos NodeMCUs)
+*   3 cabos para conectar os pinos
 *   Cabo USB para gravar o progama
 
 ## [](#fios)Ligando os fios
@@ -44,14 +44,15 @@ Você pode puxar o projeto no fritzing por este link: [http://fritzing.org/proje
 
 [![Foto Node B - Receiver]({{ site.github.url }}/assets/images/post/2017-03-01-nodemcu-conversando-por-serial/photo_nodeB.JPG)][photo_nodeB]
 
+
 ## [](#codigo) Código
 
 Nos códigos abaixo um NodeMCU vai ser comportar somente como transmissor e
 outro somente como receptor, entretando a conexão que fizemos é um caminho de
-duas vias: ambos poderiam transmitir e receber dados um para o outro. Para
+duas vias: ambos poderiam transmitir e receber dados um do outro. Para
 mantermos o teste simples, somente um irá transmitir e o outro receber.
 
-Código dos dois projetos:
+O código está exposto abaixo, caso prefira fazer download use os links:
 
 * [Projeto transmissor][project_transmitter]
 * [Projeto receptor][project_receiver]
@@ -90,13 +91,13 @@ void loop() {
 } // end of loop
 ```
 
-Poderia ser usado o método print/println também, a documentação do método está aqui: [https://www.arduino.cc/en/Reference/SoftwareSerialPrint](https://www.arduino.cc/en/Reference/SoftwareSerialPrint).
+Poderia ser usado o método print/println ao invés do write, a documentação do método está aqui: [https://www.arduino.cc/en/Reference/SoftwareSerialPrint](https://www.arduino.cc/en/Reference/SoftwareSerialPrint).
 
 ### [](#receptor) Receptor
 
 O código do receptor tem um passo a mais que é checar se existem bytes a serem
 lidos. Para isso fazemos o teste `mySerial.available() > 0`, ou seja se existem
-mais de 0 bytes a sereml idos.
+mais de 0 bytes a serem idos.
 
 ```cpp
 #include <SoftwareSerial.h>
