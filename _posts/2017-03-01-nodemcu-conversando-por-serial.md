@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Conectando dois nodemcu por SoftwareSerial"
+title:  "Conectando dois NodeMCUs por SoftwareSerial"
 date:   2017-03-01 19:50:00 +0000
 comments: true
 categories: iot nodemcu
