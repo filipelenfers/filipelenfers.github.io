@@ -9,6 +9,7 @@ categories: iot platformio nodemcu
 ## O que é o Platform IO ?
 
 TODO http://docs.platformio.org/en/latest/what-is-platformio.html
+TODO http://platformio.org
 
 ### Lista de frameworks e placas
 
@@ -16,7 +17,14 @@ TODO http://docs.platformio.org/en/latest/frameworks/index.html
 
 ### Integração com outras IDEs
 
+Aqui demonstramos o uso com o Atom, entretando o Platform IO se integra com várias IDEs.
 
+Fã se sublime?
+Curte mesmo o Visual Studio?
+Old School? Prefere um VIM ou Emacs ?
+Todas são opções de uso do Platform IO e algums outras opções de Cloud IDEs.
+
+TODO http://docs.platformio.org/en/latest/ide.html
 
 ###  PlatformIO Plus
 
