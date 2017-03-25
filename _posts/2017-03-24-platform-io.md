@@ -6,8 +6,6 @@ comments: true
 categories: iot platformio nodemcu
 ---
 
-TODO imagens!!!
-
 ## [](#oquee) O que é o Platform IO ?
 
 O [`Platform IO`](http://docs.platformio.org/en/latest/what-is-platformio.html) é
@@ -149,21 +147,13 @@ apreciem usar o Platform IO.
 
 
 ## [](#aprofundando) Aprofundando
-TODO!!!
-* Instalando em outros ambientes: link.
-* Instalando bibliotecas e controle de dependencias: link.
-* Detalhes relativos a arquivos .INO, que nem sempre são C++ válidos: link
+
+* [Instalando bibliotecas](http://docs.platformio.org/en/latest/librarymanager/index.html)
+* [Detalhes sobre o funcionamento do Linter em arquivos .INO](http://docs.platformio.org/en/latest/ide/atom.html?highlight=INO#smart-code-linter-is-disabled-for-arduino-files)
+* [Controle de dependências](http://docs.platformio.org/en/latest/librarymanager/ldf.html)
 
 [capturar_1]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar.PNG
-[capturar_2]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar2.PNG
 [capturar_3]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG
-[capturar_4]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar4.PNG
 [capturar_5]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG
-[capturar_6]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar6.PNG
-[capturar_7]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar7.PNG
-[capturar_8]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar8.PNG
-[capturar_9]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar9.PNG
-[capturar_10]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar10.PNG
 [capturar_11]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG
-[capturar_12]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar12.PNG
 [capturar_13]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG
