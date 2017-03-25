@@ -3,7 +3,7 @@ layout: post
 title:  "Usando Platform IO como IDE"
 date:   2017-03-24 19:50:00 +0000
 comments: true
-categories: iot platformio nodemcu
+categories: platformio nodemcu iot
 ---
 
 ## [](#oquee) O que é o Platform IO ?
