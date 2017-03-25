@@ -130,3 +130,7 @@ Podemo importar projetos de Arduino IDE no Platform IO.
 1. Pronto, seu projeto está disponível do PlatformIO
 
 ## [](#aprofundando) Aprofundando
+TODO!!!
+* Instalando em outros ambientes: link.
+* Instalando bibliotecas e controle de dependencias: link.
+* Detalhes relativos a arquivos .INO, que nem sempre são C++ válidos: link
