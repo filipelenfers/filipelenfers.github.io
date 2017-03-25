@@ -79,7 +79,7 @@ Pronto, tudo certo para começarmos a usar o [Platform IO](http://platformio.org
 
 [![Incializando o projeto]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar.PNG)][capturar_1]
 
-1. Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
+2. Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
 1. clique em `Initialize`, o processamento pode demorar um pouco pois o Plataform IO irá instalar o que será necessário para desenvolver no ambiente.
 1. Será criado uma estrutura de diretórios, já com os arquivos de configuração e gitignore.
 1. Clique com o botão direito na pasta 'src' e clique em `new file`.
