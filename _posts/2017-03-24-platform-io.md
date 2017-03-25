@@ -6,6 +6,8 @@ comments: true
 categories: iot platformio nodemcu
 ---
 
+TODO imagens!!!
+
 ## O que é o Platform IO ?
 
 O [`Platform IO`][http://docs.platformio.org/en/latest/what-is-platformio.html] é
@@ -119,4 +121,10 @@ void loop()
 
 ## Importando projetos
 
-TODO como importar do Arduino IDE
+Podemo importar projetos de Arduino IDE no Platform IO.
+
+1. No menu `PlaformIO` no topo clique em `Import Arduino IDE Project...`
+1. Selecione a pasta do projeto e escolha o dispositvo
+1. Clique em `Import`
+1. O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
+1. Pronto, seu projeto está disponível do PlatformIO
