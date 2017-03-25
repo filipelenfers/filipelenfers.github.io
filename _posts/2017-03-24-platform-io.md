@@ -75,8 +75,47 @@ Pronto, tudo certo para começarmos a usar o [Platform IO][http://platformio.org
 
 TODO http://docs.platformio.org/en/latest/ide/atom.html#quick-start
 
-## Upload para a placa
+1. No menu `PlaformIO` no topo clique em `Initialize or Update PlatformIO Project`
+1. Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
+1. clique em `Initialize`, o processamento pode demorar um pouco pois o Plataform IO irá instalar o que será necessário para desenvolver no ambiente.
+1. Será criado uma estrutura de diretórios, já com os arquivos de configuração e gitignore.
+1. Clique com o botão direito na pasta 'src' e clique em `new file`.
+1. De o nome do arquivo como `main.cpp`
 
+Você será requisitado a instalar o `Clang` para ter um auto complete inteligente. Este passo é opcional.
+
+1. Caso deseje instalar o `Clang` clique na opção `Install Clang`.
+1. Você será redireciona com a página com as intruções de como instalar com Clang em diversos SOs.
+
+Dentro do arquivo main.cpp cole o código:
+
+```cpp
+/**
+ * Imprime na serial a cada 1 segundo
+ */
+#include "Arduino.h"
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println("Teste!");
+   // espere um segundo
+  delay(1000);
+}
+```
+
+1. No menu `PlaformIO` no topo clique em `Build`.
+1. O código será compilado e será apresentada uma mensagem em verde indicando o sucesso.
+1. Conecte seu dispositvo conectado na USB do computador
+1. No menu `PlaformIO` no topo clique em `Upload`.
+1. Note que a COM foi automaticamente detectada e o upload iniciado.
+
+1. Com o upload feito abra o Serial Monitor, No menu `PlaformIO` no topo clique em `Serial Monitor`.
+1. O console na parte de baixo da tela será aberta e podemos ver a cada 1 segundo sendo impresso na tela "Teste!"
 
 ## Importando projetos
 
