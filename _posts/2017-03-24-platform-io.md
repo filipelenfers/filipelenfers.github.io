@@ -75,18 +75,18 @@ Pronto, tudo certo para começarmos a usar o [Platform IO](http://platformio.org
 
 * No menu `PlaformIO` no topo clique em `Initialize or Update PlatformIO Project`
 
-[![Incializando o projeto]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar.PNG)][capturar_1]
+[![Incializando o projeto]({{ site.github.url }}/assets/images/post/2017-03-24-platform-io/Capturar.PNG)][capturar_1]
 
 * Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
 * clique em `Initialize`, o processamento pode demorar um pouco pois o Plataform IO irá instalar o que será necessário para desenvolver no ambiente.
 * Será criado uma estrutura de diretórios, já com os arquivos de configuração e gitignore.
 
-[![Estrutura de diretórios]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG)][capturar_3]
+[![Estrutura de diretórios]({{ site.github.url }}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG)][capturar_3]
 
 * Clique com o botão direito na pasta 'src' e clique em `new file`.
 * De o nome do arquivo como `main.cpp`
 
-[![Criar arquivo]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG)][capturar_5]
+[![Criar arquivo]({{ site.github.url }}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG)][capturar_5]
 
 * Você será requisitado a instalar o `Clang` para ter um auto complete inteligente. Este passo é opcional.
 * Caso deseje instalar o `Clang` clique na opção `Install Clang`.
@@ -123,7 +123,7 @@ void loop()
 * Com o upload feito abra o Serial Monitor, No menu `PlaformIO` no topo clique em `Serial Monitor`.
 * O console na parte de baixo da tela será aberta e podemos ver a cada 1 segundo sendo impresso na tela "Teste!"
 
-[![Serial Monitor]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG)][capturar_11]
+[![Serial Monitor]({{ site.github.url }}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG)][capturar_11]
 
 ## [](#importando) Importando projetos
 
@@ -132,7 +132,7 @@ Podemo importar projetos de Arduino IDE no Platform IO.
 * No menu `PlaformIO` no topo clique em `Import Arduino IDE Project...`
 * Selecione a pasta do projeto e escolha o dispositvo
 
-[![Estrutura de diretórios]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG)][capturar_13]
+[![Estrutura de diretórios]({{ site.github.url }}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG)][capturar_13]
 
 * Clique em `Import`
 * O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
@@ -152,8 +152,8 @@ apreciem usar o Platform IO.
 * [Detalhes sobre o funcionamento do Linter em arquivos .INO](http://docs.platformio.org/en/latest/ide/atom.html?highlight=INO#smart-code-linter-is-disabled-for-arduino-files)
 * [Controle de dependências](http://docs.platformio.org/en/latest/librarymanager/ldf.html)
 
-[capturar_1]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar.PNG
-[capturar_3]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG
-[capturar_5]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG
-[capturar_11]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG
-[capturar_13]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG
+[capturar_1]:{{site.github.url}}/assets/images/post/2017-03-24-platform-io/Capturar.PNG
+[capturar_3]:{{site.github.url}}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG
+[capturar_5]:{{site.github.url}}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG
+[capturar_11]:{{site.github.url}}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG
+[capturar_13]:{{site.github.url}}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG
