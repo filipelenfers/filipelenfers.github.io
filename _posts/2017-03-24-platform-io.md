@@ -75,20 +75,24 @@ Pronto, tudo certo para começarmos a usar o [Platform IO](http://platformio.org
 
 ## [](#criando) Criando um projeto
 
-1. No menu `PlaformIO` no topo clique em `Initialize or Update PlatformIO Project`
+* No menu `PlaformIO` no topo clique em `Initialize or Update PlatformIO Project`
 
 [![Incializando o projeto]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar.PNG)][capturar_1]
 
-2. Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
-1. clique em `Initialize`, o processamento pode demorar um pouco pois o Plataform IO irá instalar o que será necessário para desenvolver no ambiente.
-1. Será criado uma estrutura de diretórios, já com os arquivos de configuração e gitignore.
-1. Clique com o botão direito na pasta 'src' e clique em `new file`.
-1. De o nome do arquivo como `main.cpp`
+* Selecione a placa com que desejar trabalhar (no meu caso o `NodeMCU`) e o diretória em que estará o projeto.
+* clique em `Initialize`, o processamento pode demorar um pouco pois o Plataform IO irá instalar o que será necessário para desenvolver no ambiente.
+* Será criado uma estrutura de diretórios, já com os arquivos de configuração e gitignore.
 
-Você será requisitado a instalar o `Clang` para ter um auto complete inteligente. Este passo é opcional.
+[![Estrutura de diretórios]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG)][capturar_3]
 
-1. Caso deseje instalar o `Clang` clique na opção `Install Clang`.
-1. Você será redireciona com a página com as intruções de como instalar com Clang em diversos SOs.
+* Clique com o botão direito na pasta 'src' e clique em `new file`.
+* De o nome do arquivo como `main.cpp`
+
+[![Criar arquivo]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG)][capturar_5]
+
+* Você será requisitado a instalar o `Clang` para ter um auto complete inteligente. Este passo é opcional.
+* Caso deseje instalar o `Clang` clique na opção `Install Clang`.
+* Você será redireciona com a página com as intruções de como instalar com Clang em diversos SOs.
 
 Dentro do arquivo main.cpp cole o código:
 
@@ -111,29 +115,38 @@ void loop()
 }
 ```
 
-1. No menu `PlaformIO` no topo clique em `Build`.
-1. O código será compilado e será apresentada uma mensagem em verde indicando o sucesso.
-1. Conecte seu dispositvo conectado na USB do computador
-1. No menu `PlaformIO` no topo clique em `Upload`.
-1. Note que a COM foi automaticamente detectada e o upload iniciado.
+* No menu `PlaformIO` no topo clique em `Build`.
+* O código será compilado e será apresentada uma mensagem em verde indicando o sucesso.
 
-1. Com o upload feito abra o Serial Monitor, No menu `PlaformIO` no topo clique em `Serial Monitor`.
-1. O console na parte de baixo da tela será aberta e podemos ver a cada 1 segundo sendo impresso na tela "Teste!"
+* Conecte seu dispositvo conectado na USB do computador
+* No menu `PlaformIO` no topo clique em `Upload`.
+* Note que a COM foi automaticamente detectada e o upload iniciado.
+
+* Com o upload feito abra o Serial Monitor, No menu `PlaformIO` no topo clique em `Serial Monitor`.
+* O console na parte de baixo da tela será aberta e podemos ver a cada 1 segundo sendo impresso na tela "Teste!"
+
+[![Serial Monitor]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG)][capturar_11]
 
 ## [](#importando) Importando projetos
 
 Podemo importar projetos de Arduino IDE no Platform IO.
 
-1. No menu `PlaformIO` no topo clique em `Import Arduino IDE Project...`
-1. Selecione a pasta do projeto e escolha o dispositvo
-1. Clique em `Import`
-1. O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
-1. Pronto, seu projeto está disponível do PlatformIO
+* No menu `PlaformIO` no topo clique em `Import Arduino IDE Project...`
+* Selecione a pasta do projeto e escolha o dispositvo
+
+[![Estrutura de diretórios]({{ site.url }}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG)][capturar_13]
+
+* Clique em `Import`
+* O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
+* Pronto, seu projeto está disponível do PlatformIO
+
 
 ## [](#pronto) Pronto!
+
 Agora você já tem o ambiente pronto para usar o Platform IO como ambiente de desenvolvimento.
 É um ambiente muito mais rico que o Arduino IDE, na minha opinião! Espero que vocês
 apreciem usar o Platform IO.
+
 
 ## [](#aprofundando) Aprofundando
 TODO!!!
