@@ -130,6 +130,11 @@ Podemo importar projetos de Arduino IDE no Platform IO.
 1. O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
 1. Pronto, seu projeto está disponível do PlatformIO
 
+## [](#pronto) Pronto!
+Agora você já tem o ambiente pronto para usar o Platform IO como ambiente de desenvolvimento.
+É um ambiente muito mais rico que o Arduino IDE, na minha opinião! Espero que vocês
+apreciem usar o Platform IO.
+
 ## [](#aprofundando) Aprofundando
 TODO!!!
 * Instalando em outros ambientes: link.
@@ -137,3 +142,15 @@ TODO!!!
 * Detalhes relativos a arquivos .INO, que nem sempre são C++ válidos: link
 
 [capturar_1]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar.PNG
+[capturar_2]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar2.PNG
+[capturar_3]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar3.PNG
+[capturar_4]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar4.PNG
+[capturar_5]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar5.PNG
+[capturar_6]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar6.PNG
+[capturar_7]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar7.PNG
+[capturar_8]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar8.PNG
+[capturar_9]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar9.PNG
+[capturar_10]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar10.PNG
+[capturar_11]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar11.PNG
+[capturar_12]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar12.PNG
+[capturar_13]:{{site.url}}/assets/images/post/2017-03-24-platform-io/Capturar13.PNG
