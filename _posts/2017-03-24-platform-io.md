@@ -128,3 +128,5 @@ Podemo importar projetos de Arduino IDE no Platform IO.
 1. Clique em `Import`
 1. O projeto estará no menu lateral a esquerda já dentro da estrutura de diretórios do PlatformIO.
 1. Pronto, seu projeto está disponível do PlatformIO
+
+## [](#aprofundando) Aprofundando
