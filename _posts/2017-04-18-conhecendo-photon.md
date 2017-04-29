@@ -27,27 +27,47 @@ Com todos esses recuros usar o Photon permite uma prototipação rápida e fáci
 
 ### [](#setupphoton) Setup do Photon
 
-TODO Passos para configurar um novo Photon
+Para fazer o setup emum novo Photon você precisa:
 
-### [](#tinker) Tinker
+1. Baixar a app da Particle no seu celular.
+1. Conectar o Photon no USB para ligar ele.
+1. O Photon vai emitir uma rede Wifi, conecte seu celular nela.
+1. Abra o aplicativo da Particle e registre o seu Photon.
+1. Pronto, agora o Photon poderá ser manipulado via Tinker.
+
+Link para documentação oficial: (https://docs.particle.io/guide/getting-started/start/photon/#step-1-power-on-your-device)[https://docs.particle.io/guide/getting-started/start/photon/#step-1-power-on-your-device]
+
+O vídeo abaixo demonstra o setup e como fazer um teste via Tinker, fazendo o LED embarcado na placa ligar e desligar pelo celular:
+<iframe src="https://player.vimeo.com/video/178282058" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/178282058">Particle Photon: Setup &amp; Blink</a> from <a href="https://vimeo.com/particle">Particle</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## [](#tinker) Tinker
+
+TODO explicar o Tinkler.
+
+### [](#tinkerPiscarLed) Piscar LED
+TODO mostrar LED piscando
+
+### [](#tinkerLeituraDigital) Leitura Digital
+TODO mostrar leitura digital
+
+### [](#tinkerLeituraAnalógica) Leitura Analógica
+TODO mostrar leitura analógica
 
 
-## [](#webide) Usando WebIDE
+## [](#webide) Desenvolvendo
 
-### [](#webide) Resturando o Tinker
+### [](#webide) Usando WebIDE
 
 ### [](#particlefunctions) Particle functions
 
 ### [](#particlevariables) Particle variables
 
+### [](#webide) Resturando o Tinker
+
 ### [](#webhooks) Webhooks
 
 
 ## IDE Local
-
-
-## [](#projetoexemplo) Projeto exemplo
-
-* todos: código, envio de infos pela cloud, recebimento pela cloud, upload de programa por usb e cloud
 
 ## [](#docs) Documentação
