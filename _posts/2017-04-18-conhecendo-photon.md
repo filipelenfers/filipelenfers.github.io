@@ -43,9 +43,28 @@ O vídeo abaixo demonstra o setup e como fazer um teste via Tinker, fazendo o LE
 
 ## [](#tinker) Tinker
 
-TODO explicar o Tinkler.
+O Tinker é um programa para rodar no seu dispositivo que permite que a mobile app da Particle o controle, permitindo fazer escritas e leituras nas portas
+de forma rápida e fácil. É excelente para testes e protótipos sem sequer ter que escrever código.
+Abaixo vamos fazer uns exemplos práticos de uso do Tinker.
 
-### [](#tinkerPiscarLed) Piscar LED
+Os Photons já vem com o Tinker embarcado de fábrica.
+
+Mais detalhes sobre o Tinker: (https://docs.particle.io/guide/getting-started/tinker/photon/)[https://docs.particle.io/guide/getting-started/tinker/photon/]
+
+Para puxar a app mobile use os links abaixo:
+   - [iPhone](https://itunes.apple.com/us/app/particle-build-photon-electron/id991459054?ls=1&mt=8)
+   - [Android](https://play.google.com/store/apps/details?id=io.particle.android.app)
+   - [Windows Phone](https://www.microsoft.com/en-us/store/p/particle/9nblggh4p55n)
+
+Abaixo vamos mostrar alguns exemplos de testes feitos usando o Tinker. Você já teve ter o Photon com o seu setup feito para isso.
+
+### [](#tinkerPiscarLed) Acender LED - Escrita Digital
+Como o Photon já tem um LED embarcado na porta de D7 vamos usar ele no primeiro exemplo.
+
+1. Conecte o app mobile da Particle com seu dispositivo Photon.
+1.  
+
+### [](#tinkerPiscarLed) Acender LED com controle de luminosidade - Escrita Analógica
 TODO mostrar LED piscando
 
 ### [](#tinkerLeituraDigital) Leitura Digital
