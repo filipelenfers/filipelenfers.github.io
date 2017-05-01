@@ -102,7 +102,25 @@ TODO !!! vídeo de demonstração.
 
 ## [](#webide) Desenvolvendo
 
+Para desenvolver para o Photon podemos usar tanto sua WebIDE quanto uma IDE local que é baseada em Atom. Para os exemplos vamos usar a WebIDE pela facilidade de começar desenvolvendo sem problemas com ela, o fato do Photon receber o flash do programa pela internet permite este uso fácil da WebIDE.
+
+O desenvolvimento é feito igual ao Arduino, na própria IDE vocé terá acesso a várias biblitecas disponíveis para o Photon.
+
 ### [](#webide) Usando WebIDE
+
+Acesse [https://build.particle.io/](https://build.particle.io/) e faça seu cadastro para começar a usar. Do lado esquedo você verá algumas `Example Apps`, clique em `Blink AN LED` e o código de exemplo de piscar LED irá aparecer na tela.
+
+TODO !!! imagem focada neste pedaçao acima.
+
+Do lado esquerdo clique no símbolo de alvo para adicionar um dispositvo, caso já não tenha adicionado, e adicione seu Photon.
+
+TODO !!! imagem focada neste pedaçao acima.
+
+Clique no raio que aparece no lado esquerdo e o programa irá subir para seu Photon automaticamente, mesmo que ele não esteja na USB (mas esteja ligado e conectado em uma Wifi :) ) e veja o LED piscar. O upload do flash para o Photon pode demorar um pouco.
+
+TODO !!! imagem focada neste pedaçao acima.
+
+TODO !!! vídeo de demonstração.
 
 ### [](#particlefunctions) Particle functions
 
@@ -113,6 +131,6 @@ TODO !!! vídeo de demonstração.
 ### [](#webhooks) Webhooks
 
 
-## IDE Local
+### IDE Local
 
 ## [](#docs) Documentação
