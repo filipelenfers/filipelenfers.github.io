@@ -58,7 +58,7 @@ Para puxar a app mobile use os links abaixo:
 
 Abaixo vamos mostrar alguns exemplos de testes feitos usando o Tinker. Você já teve ter o Photon com o seu setup feito para isso.
 
-***Os exemplos abaixo foram tirados da própria página da Photon: [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/), aqui apresentarei uma versão resumida.***
+***Os exemplos abaixo foram tirados da própria página da Photon, aqui apresentarei uma versão resumida e um vídeo de demonstração. Para mais detalhes acessa a página [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/). ***
 
 ### [](#tinkerPiscarLed) Acender LED - Escrita Digital
 Como o Photon já tem um LED embarcado na porta de D7 vamos usar ele no primeiro exemplo.
