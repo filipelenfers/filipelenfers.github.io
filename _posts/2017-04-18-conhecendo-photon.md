@@ -58,14 +58,21 @@ Para puxar a app mobile use os links abaixo:
 
 Abaixo vamos mostrar alguns exemplos de testes feitos usando o Tinker. Você já teve ter o Photon com o seu setup feito para isso.
 
+***Os exemplos abaixo foram tirados da própria página da Photon: [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/), aqui apresentarei uma versão resumida.***
+
 ### [](#tinkerPiscarLed) Acender LED - Escrita Digital
 Como o Photon já tem um LED embarcado na porta de D7 vamos usar ele no primeiro exemplo.
 
 1. Conecte o app mobile da Particle com seu dispositivo Photon.
-1.  
+1. Na tela do Tinker clique no `D7` e escolha a opção `digitalWrite`.
+1. A palavra `LOW` irá aparecer ao lado do `D7`, clique outra vez no `D7` e a saída mudará para `HIGH` e o LED acenderá.
+1. Ao clicar novamente no `D7` ele muda para `LOW` e apaga o LED.
+1. Você pode resetar o modo do `D7` ao manter ele presionado por alguns segundos, assim você pode novamente escolher posteriormente se ele será um `digitalWrite` ou `digitalRead`.
+
+TODO !!! vídeo de demonstração.
 
 ### [](#tinkerPiscarLed) Acender LED com controle de luminosidade - Escrita Analógica
-TODO mostrar LED piscando
+Neste exemplo vamos conectar um LED ao nosso Photon e usar a escrita analógica para mudar a luminosidade do LED.
 
 ### [](#tinkerLeituraDigital) Leitura Digital
 TODO mostrar leitura digital
