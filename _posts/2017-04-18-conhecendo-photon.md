@@ -92,8 +92,13 @@ TODO !!! vídeo de demonstração.
 TODO !!! vídeo de demonstração.
 
 ### [](#tinkerLeituraAnalógica) Leitura Analógica
-TODO mostrar leitura analógica
 
+1. Conecte um sensor de luz (fotoresistor - LDR)  no pino `A0`.
+1. No mobile app configure o `A0` para `analogRead`.
+1. Exponha o sensor a luz e clique no `A0` para atualizar o valor lido.
+1. Agora cubra o sensor, o protegendo da luz, e clique no `A0` para atualizar o valor lido.
+
+TODO !!! vídeo de demonstração.
 
 ## [](#webide) Desenvolvendo
 
