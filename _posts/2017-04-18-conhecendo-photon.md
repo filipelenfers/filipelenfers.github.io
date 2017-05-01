@@ -58,7 +58,7 @@ Para puxar a app mobile use os links abaixo:
 
 Abaixo vamos mostrar alguns exemplos de testes feitos usando o Tinker. Você já teve ter o Photon com o seu setup feito para isso.
 
-***Os exemplos abaixo foram tirados da própria página da Photon, aqui apresentarei uma versão resumida e um vídeo de demonstração. Para mais detalhes acessa a página [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/). ***
+***Os exemplos abaixo foram tirados da própria página da Photon, aqui apresentarei uma versão resumida e um vídeo de demonstração. Para mais detalhes acessa a página [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/).***
 
 ### [](#tinkerPiscarLed) Acender LED - Escrita Digital
 Como o Photon já tem um LED embarcado na porta de D7 vamos usar ele no primeiro exemplo.
@@ -74,8 +74,22 @@ TODO !!! vídeo de demonstração.
 ### [](#tinkerPiscarLed) Acender LED com controle de luminosidade - Escrita Analógica
 Neste exemplo vamos conectar um LED ao nosso Photon e usar a escrita analógica para mudar a luminosidade do LED.
 
+1. Conecte um LED na porta `D0` e ao `GND`. A porta `D0` é um `PWN` e pode simular uma saída analógica.
+1. Clique na na porta `D0` e escolha `analogWrite`.
+1. Um slider aparecerá ao lado da porta permitindo que você escolha valores entre 0 e 255.
+1. Use o slider e veja o brilho do LED aumentando e diminuindo.
+1. Você pode resetar o modo do `D0` ao manter ele presionado por alguns segundos.
+
+TODO !!! vídeo de demonstração.
+
 ### [](#tinkerLeituraDigital) Leitura Digital
-TODO mostrar leitura digital
+
+1. Conecte um sensor digital de som na porta `D0`. Outro jeito é conectar a saída `3v3` diretamente ao `D0` aonde você sempre receberá um sinal `HIGH`.
+1. Clique na na porta `D0` e escolha `digitalRead`.
+1. O aplicativo começará a ler os sinais digitais e mostrará se está lendo `HIGH` ou `LOW`.
+1. Faça seu sensor digital de som mudar de estado, ou desligue/ligue o conexão com o `3v3` para mudar a leitura e clique brevemente sobre `D0` fazendo ele atualizar o valor lido.
+
+TODO !!! vídeo de demonstração.
 
 ### [](#tinkerLeituraAnalógica) Leitura Analógica
 TODO mostrar leitura analógica
