@@ -145,8 +145,28 @@ TODO !!! vídeo de demonstração.
 
 ### [](#pubsub) Publish/Subscribe
 
-### [](#webide) Resturando o Tinker
+A biblioteca da Particle nos disponibliza funções para fazer broadcast, usando o padrão Publish/Subscribe.
+Publicações podem ser públicas, aonde qualquer um que se inscreva pode receber as mensagens, ou podem ser privadas aonde somente você poderá ter acesso.
 
+Abaixo vamos fazer um demonstração simples de publish e suscribe para dar uma ideia de funcionamento.
+
+Para mais detalhes acesse a referencia de desenvolvimento neste link: [https://docs.particle.io/reference/firmware/photon/#particle-publish-](https://docs.particle.io/reference/firmware/photon/#particle-publish-).
+
+TODO !!! Código: receber mensagem para piscar rápido ou devagar. Publicar que alternou de estado fast->slow, ou de slow->fast.
+
+TODO !!! Video de demo
+
+
+### [](#restoretinker) Resturando o Tinker
+
+Conforme fomos desenvolvendo e escrevendo novos programas na memória do Photon acabamos apagando o Tinker. Mas restaurá-lo é muito simples, vamos fazer novamente o flash do código dele no Photon:
+
+1. Acesse a Web IDE: [https://build.particle.io/](https://build.particle.io/).
+1. Do lado esquerdo, na seção `Example Apps` clique na opção `Tinker`.
+1. O código do Tinker será aberto, clique no raio do lado esquerdo para fazer o flash no dispositivo.
+1. Pronto, o Tinker foi restaurado no seu Photon.
+
+TODO vídeo do restore do Tinker.
 
 
 ### [](#webhooks) Webhooks
