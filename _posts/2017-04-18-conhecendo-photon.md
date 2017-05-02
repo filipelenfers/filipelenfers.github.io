@@ -171,7 +171,18 @@ TODO vídeo do restore do Tinker.
 
 ### [](#webhooks) Webhooks
 
+A plataforma da Particle permite que `Webhooks` sejam configurados. Webhooks são chamadas a APIs na web que a Particle irá fazer dado algum evento, assim você pode fazer com que em determinadas situações um webservice seja chamado para realizar alguma ação.
+
+Mais detalhes sobre o Webhooks veja o link: [https://docs.particle.io/guide/tools-and-features/webhooks/](https://docs.particle.io/guide/tools-and-features/webhooks/).
+
+Neste outro link [https://docs.particle.io/tutorials/integrations/webhooks/](https://docs.particle.io/tutorials/integrations/webhooks/) temos outros exemplos práticos como o uso do Twilio para envio de SMS.
 
 
 
 ## [](#docs) Documentação
+
+    - [Referência para desenvolvimento](https://docs.particle.io/reference/firmware/photon/)
+    - [Guia inicial do Photon](https://docs.particle.io/guide/getting-started/intro/photon/)
+    - [Webhooks](https://docs.particle.io/guide/tools-and-features/webhooks/)
+    - [Exemplos Webhooks](https://docs.particle.io/tutorials/integrations/webhooks/)
+    - [Photon Datasheet](https://docs.particle.io/datasheets/photon-datasheet/)
