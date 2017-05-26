@@ -96,7 +96,9 @@ TODO !!! vídeo de demonstração.
 
 ### [](#tinkerLeituraAnalógica) Leitura Analógica
 
-1. Conecte um sensor de luz (fotoresistor - LDR)  no pino `A0`.
+1. Conecte um sensor de luz (fotoresistor - LDR)  no pino `A0` e no `A5`.
+1. Conecte um resistor (usei um de 10K) de luz (fotoresistor - LDR)  no pino `A0` e no `GND`.
+1. No mobile app configure o `A5` para `digitalWrite` e troque ele para `HIGH`.
 1. No mobile app configure o `A0` para `analogRead`.
 1. Exponha o sensor a luz e clique no `A0` para atualizar o valor lido.
 1. Agora cubra o sensor, o protegendo da luz, e clique no `A0` para atualizar o valor lido.
@@ -133,13 +135,50 @@ TODO !!! vídeo de demonstração.
 
 TODO !!! Código.
 
+
 TODO !!! vídeo de demonstração.
 
 ### [](#particlevariables) Particle variables
 
 `Particle variables` são um jeito fácil de subir o conteúdo de uma variável para a cloud da Particle e depois obter novamente o valor da cloud via uma API.
+Vamos usar o mesmo setup do [Leitura Analógica](#tinkerLeituraAnalógica).
 
-TODO !!! Código.
+```cpp
+int photoresistor = A0;
+
+int power = A5;
+
+int analogvalue;
+
+void setup() {
+
+    pinMode(photoresistor,INPUT);
+    pinMode(power,OUTPUT);
+
+    digitalWrite(power,HIGH);
+
+    Particle.variable("analogvalue", &analogvalue, INT);
+}
+
+void loop() {
+    analogvalue = analogRead(photoresistor);
+    delay(1000);
+}
+```
+
+Após subir este código no Photon podemos acessar o console e e obter o dado da variável.
+
+TODO !!! Foto da tela do console
+
+Ou também podemos pegar o dado via uma API rest, mas para isso precisamos obter o token de acesso antes.
+
+Para obter o token de acesso e usar api siga os passos abaixo:
+
+1. Acesse a [WebIDE](https://build.particle.io).
+1. Clique em `Settings`, é o último icone no menu do lado esquerdo, uma engrenagem.
+1. Você verá o `Access Token`, copie ele e reserve.
+1. Para acessar a API via `curl` (caso estejas no Linux/MacOS ou usando o bash do Windows) use o comando: `curl -X GET -H "Authorization: Bearer coleSeuTokenAqui" https://api.particle.io/v1/devices/4c0055000c51353432383931/analogvalue`
+1. Caso prefiras fazer um de acesso a API usando o Chrome podemos usar a extensão PostMan, abaixo no vídeo demonstro como fazer o request.
 
 TODO !!! vídeo de demonstração.
 
