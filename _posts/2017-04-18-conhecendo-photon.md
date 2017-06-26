@@ -13,7 +13,7 @@ A Particle fornece ferramentas de desnevolvimento e SDKs para que você posso cr
 
 O [Photon](https://www.particle.io/products/hardware/photon-wifi-dev-kit) é um dos dispositivos que Particle vende, ele é composto de um microcontrolador STM32 ARM Cortex M3 e um chip Cypress Wi-Fi. É um dispositivo pequeno e que possui um pequeno led imbutido na porta D7 para testes.
 
-TODO imagens do Photon.
+[![Photon Device]({{ site.url }}/assets/images/post/photon/photon-device.png)][photon-device]
 
 O Photon já vem com um firmware instalado chamado [Tinker](https://docs.particle.io/guide/getting-started/tinker/core/) que permite controlar as portas do dispositivo pelo celular, fazendo escritas ou leituras nas suas portas.
 
@@ -162,3 +162,4 @@ Neste outro link [https://docs.particle.io/tutorials/integrations/webhooks/](htt
 [screen-webide-1]:{{site.url}}/assets/images/post/photon/screen-blinktest-arrow-01-si.PNG
 [screen-webide-2]:{{site.url}}/assets/images/post/photon/screen-devices-02-arrow-si.PNG
 [screen-webide-3]:{{site.url}}/assets/images/post/photon/screen-flash-03-arrow-si.PNG
+[photon-device]:{{site.url}}/assets/images/post/photon/photon-device.png
