@@ -52,7 +52,7 @@ Abaixo vamos fazer uns exemplos práticos de uso do Tinker.
 
 Os Photons já vem com o Tinker embarcado de fábrica.
 
-Mais detalhes sobre o Tinker: (https://docs.particle.io/guide/getting-started/tinker/photon/)[https://docs.particle.io/guide/getting-started/tinker/photon/]
+Mais detalhes sobre o Tinker: [https://docs.particle.io/guide/getting-started/tinker/photon/](https://docs.particle.io/guide/getting-started/tinker/photon/)
 
 Para puxar a app mobile use os links abaixo:
    - [iPhone](https://itunes.apple.com/us/app/particle-build-photon-electron/id991459054?ls=1&mt=8)
@@ -117,21 +117,15 @@ O link para download da IDE local é: [https://www.particle.io/products/developm
 
 Acesse [https://build.particle.io/](https://build.particle.io/) e faça seu cadastro para começar a usar. Do lado esquedo você verá algumas `Example Apps`, clique em `Blink AN LED` e o código de exemplo de piscar LED irá aparecer na tela.
 
-TODO !!! imagem focada neste pedaçao acima.
+[![Screenshot Blink Led Example]({{ site.url }}/assets/images/post/photon/screen-blinktest-arrow-01-si.PNG)][screen-webide-1]
 
 Do lado esquerdo clique no símbolo de alvo para adicionar um dispositvo, caso já não tenha adicionado, e adicione seu Photon.
 
-TODO !!! imagem focada neste pedaçao acima.
+[![Screenshot Devices]({{ site.url }}/assets/images/post/photon/screen-devices-02-arrow-si.PNG)][screen-webide-2]
 
 Clique no raio que aparece no lado esquerdo e o programa irá subir para seu Photon automaticamente, mesmo que ele não esteja na USB (mas esteja ligado e conectado em uma Wifi :) ) e veja o LED piscar. O upload do flash para o Photon pode demorar um pouco.
 
-TODO !!! imagem focada neste pedaçao acima.
-
-TODO !!! vídeo de demonstração.
-
-
-
-
+[![Screenshot Flash]({{ site.url }}/assets/images/post/photon/screen-flash-03-arrow-si.PNG)][screen-webide-3]
 
 ### [](#restoretinker) Resturando o Tinker
 
@@ -155,10 +149,16 @@ Neste outro link [https://docs.particle.io/tutorials/integrations/webhooks/](htt
 
 
 
-## [](#docs) Documentação
+## [](#docs) Referências
 
-    - [Referência para desenvolvimento](https://docs.particle.io/reference/firmware/photon/)
-    - [Guia inicial do Photon](https://docs.particle.io/guide/getting-started/intro/photon/)
-    - [Webhooks](https://docs.particle.io/guide/tools-and-features/webhooks/)
-    - [Exemplos Webhooks](https://docs.particle.io/tutorials/integrations/webhooks/)
-    - [Photon Datasheet](https://docs.particle.io/datasheets/photon-datasheet/)
+- [Referência para desenvolvimento](https://docs.particle.io/reference/firmware/photon/)
+- [Guia inicial do Photon](https://docs.particle.io/guide/getting-started/intro/photon/)
+- [Webhooks](https://docs.particle.io/guide/tools-and-features/webhooks/)
+- [Exemplos Webhooks](https://docs.particle.io/tutorials/integrations/webhooks/)
+- [Photon Datasheet](https://docs.particle.io/datasheets/photon-datasheet/)
+
+
+
+[screen-webide-1]:{{site.url}}/assets/images/post/photon/screen-blinktest-arrow-01-si.PNG
+[screen-webide-2]:{{site.url}}/assets/images/post/photon/screen-devices-02-arrow-si.PNG
+[screen-webide-3]:{{site.url}}/assets/images/post/photon/screen-flash-03-arrow-si.PNG
