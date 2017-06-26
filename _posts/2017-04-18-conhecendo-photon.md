@@ -17,7 +17,7 @@ TODO imagens do Photon.
 
 O Photon já vem com um firmware instalado chamado Tinker (TODO link para tinker) que permite controlar as portas do dispositivo pelo celular, fazendo escritas ou leituras nas suas portas.
 
-Outra coisa interessante da própria Particle são as `Particle functions`, funções que podem ser invocadas no dispositivo via API, e as `Particle variables` que são um jeito fácil de subir o valor de uma variável para a cloud da Particle. Abaixo falamos um pouco mais sobre esses dois recursos.
+Outra coisa interessante da própria Particle são as `Particle functions`, funções que podem ser invocadas no dispositivo via API, e as `Particle variables` que são um jeito fácil de subir o valor de uma variável para a cloud da Particle. Em outro post exploraremos estes recursos.
 A plataforma da Particle também conta com um facilidades de publish/subscribe, aonde você pode fazer publish privado (para somente 1 dispositivo) ou público (para todos que se inscreverem no canal).
 
 Com todos esses recuros usar o Photon permite uma prototipação rápida e fácil, sendo uma boa escolha para projetos de IoT. Na própria documentação da Particle eles também ajudam você a trnasformar um protóprio em um produto (TODO add link https://docs.particle.io/guide/how-to-build-a-product/intro/).
