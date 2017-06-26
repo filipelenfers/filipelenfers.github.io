@@ -136,9 +136,6 @@ Conforme fomos desenvolvendo e escrevendo novos programas na memória do Photon 
 1. O código do Tinker será aberto, clique no raio do lado esquerdo para fazer o flash no dispositivo.
 1. Pronto, o Tinker foi restaurado no seu Photon.
 
-TODO vídeo do restore do Tinker.
-
-
 ### [](#webhooks) Webhooks
 
 A plataforma da Particle permite que `Webhooks` sejam configurados. Webhooks são chamadas a APIs na web que a Particle irá fazer dado algum evento, assim você pode fazer com que em determinadas situações um webservice seja chamado para realizar alguma ação.
