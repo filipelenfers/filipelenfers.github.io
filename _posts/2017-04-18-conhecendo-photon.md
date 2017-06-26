@@ -6,6 +6,24 @@ comments: true
 categories: iot
 ---
 
+<style>
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
+
 ## [](#oquee) O que é a Particle e o Photon ?
 
 [Particle[](https://www.particle.io) é uma plataforma completa para IoT que fornece tanto os dispositivos (como o Photon) quanto uma plataforma em cloud para com que o dispositivo envie e receba dados, faz logs dos eventos e permite conectar webhooks a ela.
@@ -136,6 +154,11 @@ Conforme fomos desenvolvendo e escrevendo novos programas na memória do Photon 
 1. O código do Tinker será aberto, clique no raio do lado esquerdo para fazer o flash no dispositivo.
 1. Pronto, o Tinker foi restaurado no seu Photon.
 
+
+<div class="video-container"> <iframe width="640" height="360" src="https://www.youtube.com/embed/9vdJg_frGMQ" frameborder="0" allowfullscreen></iframe>  </div>
+
+
+<br />
 ### [](#webhooks) Webhooks
 
 A plataforma da Particle permite que `Webhooks` sejam configurados. Webhooks são chamadas a APIs na web que a Particle irá fazer dado algum evento, assim você pode fazer com que em determinadas situações um webservice seja chamado para realizar alguma ação.
