@@ -90,7 +90,8 @@ Como o Photon já tem um LED embarcado na porta de D7 vamos usar ele no primeiro
 1. Ao clicar novamente no `D7` ele muda para `LOW` e apaga o LED.
 1. Você pode resetar o modo do `D7` ao manter ele presionado por alguns segundos, assim você pode novamente escolher posteriormente se ele será um `digitalWrite` ou `digitalRead`.
 
-TODO !!! vídeo de demonstração.
+<div class="video-container"> <iframe width="640" height="360" src="https://www.youtube.com/embed/EdDtCufHvlw" frameborder="0" allowfullscreen></iframe> </div>
+<br />
 
 ### [](#tinkerPiscarLed) Acender LED com controle de luminosidade - Escrita Analógica
 Neste exemplo vamos conectar um LED ao nosso Photon e usar a escrita analógica para mudar a luminosidade do LED.
