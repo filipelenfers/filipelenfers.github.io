@@ -102,7 +102,12 @@ Neste exemplo vamos conectar um LED ao nosso Photon e usar a escrita analógica 
 1. Use o slider e veja o brilho do LED aumentando e diminuindo.
 1. Você pode resetar o modo do `D0` ao manter ele presionado por alguns segundos.
 
-TODO !!! vídeo de demonstração.
+_No meu caso estou usando um resistor de 68&#937; com o LED._
+
+<div class="video-container">
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/0SHjqUp-T9I" frameborder="0" allowfullscreen></iframe>
+</div>
+<br />
 
 ### [](#tinkerLeituraDigital) Leitura Digital
 
